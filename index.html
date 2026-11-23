@@ -39,22 +39,23 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero">
       <h1 class="hero-names">Irene <span class="amp">&amp;</span> Nicola</h1>
-      <div class="hero-images">
-        <figure class="photo photo--tall"><img src="statics/images/coppia-1.jpg" alt="Irene e Nicola" loading="eager"></figure>
-        <figure class="photo photo--tall photo--offset"><img src="statics/images/coppia-2.jpg" alt="Irene e Nicola" loading="eager"></figure>
-      </div>
+      <figure class="hero-art">
+        <img src="statics/images/brand.svg" alt="Disegno di Irene e Nicola che tengono un fiore" width="992" height="1112">
+      </figure>
       <p class="eyebrow">Ci sposiamo!</p>
       <!-- TODO: data del matrimonio -->
-      <p class="hero-date">00 · 00 · 2027</p>
+      <p class="hero-date">15 · 06 · 2027</p>
       <p class="hero-text">Saremmo felici di condividere con voi la gioia di questo giorno.</p>
 
       <!-- Countdown: modifica data-date con data e ora della cerimonia (formato AAAA-MM-GGTHH:MM) -->
-      <div class="countdown" data-date="2027-06-12T15:30:00" aria-live="polite">
+      <div class="countdown" data-date="2027-06-15T11:30:00" aria-live="polite">
         <div><span data-unit="days">–</span><small>giorni</small></div>
         <div><span data-unit="hours">–</span><small>ore</small></div>
         <div><span data-unit="minutes">–</span><small>minuti</small></div>
       </div>
     </section>
+
+    <img class="divider" src="statics/images/fiori.svg" alt="" aria-hidden="true">
 
     <!-- ===================== PROGRAMMA ===================== -->
     <section id="programma" class="section">
@@ -63,23 +64,23 @@
 
       <div class="events">
         <article class="event">
-          <p class="event-time">15:30</p>
+          <p class="event-time">11:00</p>
           <h3>Santa Messa</h3>
           <!-- TODO: nome e indirizzo della chiesa -->
-          <p class="event-place">Chiesa di [Nome della chiesa]</p>
-          <p class="event-address">Via [Indirizzo], [Città] ([Prov])</p>
-          <p class="event-note">Vi chiediamo di arrivare 15 minuti prima dell'inizio.</p>
+          <p class="event-place">Chiesa del Sacro Cuore Immacolato di Maria </p>
+          <p class="event-address">Via Via Pesenti, 50, 24044 Dalmine (BG)</p>
+          <p class="event-note"> Vi chiediamo di arrivare 15 minuti prima dell'inizio.</p>
         </article>
 
-        <div class="divider" aria-hidden="true">✦</div>
+        <img class="divider divider--small" src="statics/images/fiori.svg" alt="" aria-hidden="true">
 
         <article class="event">
-          <p class="event-time">18:00</p>
+          <p class="event-time">12:00</p>
           <h3>Ricevimento</h3>
           <!-- TODO: nome e indirizzo della location -->
-          <p class="event-place">[Nome della location]</p>
-          <p class="event-address">Via [Indirizzo], [Città] ([Prov])</p>
-          <p class="event-note">Aperitivo, cena e festa insieme fino a tarda sera.</p>
+          <p class="event-place"> Ristorante La Frasca</p>
+          <p class="event-address">Via Convento, 3, 24031 Almenno San Salvatore BG</p>
+          <p class="event-note">Aperitivo, pranzo e festa insieme fino a tarda sera.</p>
         </article>
       </div>
 
@@ -93,7 +94,9 @@
     </section>
 
     <!-- ===================== FOTO INTERMEDIA ===================== -->
-    <figure class="photo photo--wide"><img src="statics/images/hero.jpg" alt="Irene e Nicola" loading="lazy"></figure>
+    <figure class="photo photo--wide">
+      <img src="statics/images/hero.jpg" alt="Irene e Nicola" loading="lazy">
+    </figure>
 
     <!-- ===================== COME ARRIVARE ===================== -->
     <section id="come-arrivare" class="section">
@@ -102,14 +105,14 @@
       <div class="places">
         <article class="place">
           <h3>La chiesa</h3>
-          <p>Chiesa di [Nome della chiesa]<br>Via [Indirizzo], [Città]</p>
+          <p>Chiesa del Sacro Cuore Immacolato di Maria<br>Via Via Pesenti, 50, 24044 Dalmine (BG)</p>
           <!-- TODO: sostituisci "Chiesa+...+Città" con l'indirizzo reale (spazi = +) -->
           <div class="map">
             <iframe title="Mappa della chiesa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Duomo+di+Milano&output=embed"></iframe>
+              src="https://www.google.com/maps?q=Chiesa+del+Sacro+Cuore+Immacolato+di+Maria+Via+Via+Pesenti+50+24044+Dalmine+BG&output=embed"></iframe>
           </div>
           <a class="btn" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/dir/?api=1&destination=Duomo+di+Milano">Indicazioni stradali</a>
+             href="https://www.google.com/maps/dir/?api=1&destination=Chiesa+del+Sacro+Cuore+Immacolato+di+Maria+Via+Via+Pesenti+50+24044+Dalmine+BG">Indicazioni stradali</a>
           <div class="info-box">
             <h4>Parcheggio</h4>
             <!-- TODO -->
@@ -119,14 +122,14 @@
 
         <article class="place">
           <h3>Il ricevimento</h3>
-          <p>[Nome della location]<br>Via [Indirizzo], [Città]</p>
+          <p>Ristorante La Frasca<br>Via Convento, 3, 24031 Almenno San Salvatore BG</p>
           <!-- TODO: sostituisci con l'indirizzo reale della location -->
           <div class="map">
             <iframe title="Mappa della location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Castello+Sforzesco+Milano&output=embed"></iframe>
+              src="https://www.google.com/maps?q=Ristorante+La+Frasca+Via+Convento+3+24031+Almenno+San+Salvatore+BG&output=embed"></iframe>
           </div>
           <a class="btn" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/dir/?api=1&destination=Castello+Sforzesco+Milano">Indicazioni stradali</a>
+             href="https://www.google.com/maps/dir/?api=1&destination=Ristorante+La+Frasca+Via+Convento+3+24031+Almenno+San+Salvatore+BG">Indicazioni stradali</a>
           <div class="info-box">
             <h4>Parcheggio</h4>
             <!-- TODO -->
@@ -135,7 +138,7 @@
         </article>
       </div>
 
-      <p class="note center">Dalla chiesa alla location ci sono circa [20] minuti in auto.</p>
+      <p class="note center">Dalla chiesa alla location ci sono circa 35 minuti in auto.</p>
     </section>
 
     <!-- ===================== INFO UTILI ===================== -->
@@ -144,26 +147,27 @@
       <dl class="faq">
         <div>
           <dt>Conferma della presenza</dt>
-          <dd>Vi chiediamo gentilmente di confermare la vostra presenza entro il <strong>[00 mese 2027]</strong>, contattandoci direttamente.</dd>
+          <dd>Vi chiediamo gentilmente di confermare la vostra presenza entro il 
+            <strong>01 maggio 2027</strong></dd>
         </div>
         <div>
           <dt>Dress code</dt>
-          <dd>[Elegante. Le signore sono pregate di evitare il bianco.]</dd>
+          <dd>Elegante. Le signore sono pregate di evitare il bianco.</dd>
         </div>
         <div>
           <dt>Bambini</dt>
-          <dd>[I bambini sono i benvenuti: segnalatecelo così prepareremo un menù dedicato.]</dd>
+          <dd>I bambini sono i benvenuti: segnalatecelo così prepareremo un menù dedicato.</dd>
         </div>
-        <div>
+        <!-- <div>
           <dt>Dove dormire</dt>
           <dd>[Hotel / B&amp;B convenzionati vicino alla location: nome, telefono.]</dd>
-        </div>
+        </div> -->
       </dl>
     </section>
 
-    <!-- ===================== ALLERGIE ===================== -->
-    <section id="allergie" class="section">
-      <h2>Allergie e intolleranze</h2>
+    <!-- ===================== Presenza ===================== -->
+    <section id="presenza" class="section">
+      <h2>Conferma la presenza<strong>01 maggio 2027</strong></h2>
       <p class="lead">Avete allergie, intolleranze o esigenze alimentari particolari?
         Compilate il modulo, ci penseremo noi.</p>
       <div class="center">
@@ -171,6 +175,17 @@
         <a class="btn" href="https://forms.gle/XXXXXXXXXXXX" target="_blank" rel="noopener">Compila il modulo</a>
       </div>
     </section>
+
+    
+    <!-- ===================== ALLERGIE ===================== -->
+    <!-- <section id="allergie" class="section">
+      <h2>Allergie e intolleranze</h2>
+      <p class="lead">Avete allergie, intolleranze o esigenze alimentari particolari?
+        Compilate il modulo, ci penseremo noi.</p>
+      <div class="center">
+        <a class="btn" href="https://forms.gle/XXXXXXXXXXXX" target="_blank" rel="noopener">Compila il modulo</a>
+      </div>
+    </section> -->
 
     <!-- ===================== REGALO / IBAN ===================== -->
     <section id="regalo" class="section section--alt">
@@ -210,6 +225,8 @@
     </section>
 
     <!-- ===================== CHIUSURA ===================== -->
+    <img class="divider" src="statics/images/fiori.svg" alt="" aria-hidden="true">
+
     <section class="closing">
       <p class="closing-title">Non vediamo l'ora di festeggiare con voi.</p>
       <p class="hero-names hero-names--small">Irene <span class="amp">&amp;</span> Nicola</p>

@@ -129,13 +129,11 @@ h4 {
 }
 .amp { font-style: italic; color: var(--accent); }
 
-.hero-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(.75rem, 3vw, 2rem);
-  max-width: 760px;
-  margin: clamp(2rem, 6vw, 3.5rem) auto;
+.hero-art {
+  width: min(78%, 420px);
+  margin: clamp(2rem, 6vw, 3.5rem) auto clamp(2rem, 5vw, 3rem);
 }
+.hero-art img { width: 100%; height: auto; }
 
 .eyebrow {
   font-size: .8rem;
@@ -154,8 +152,6 @@ h4 {
   background: var(--bg-alt) linear-gradient(135deg, var(--bg-alt), var(--line));
 }
 .photo img { width: 100%; height: 100%; object-fit: cover; }
-.photo--tall { aspect-ratio: 3 / 4; }
-.photo--offset { transform: translateY(2.5rem); }
 .photo--wide {
   aspect-ratio: 16 / 7;
   max-width: var(--max);
@@ -212,12 +208,14 @@ h4 {
 .event-place { font-weight: 400; }
 .event-address { color: var(--muted); }
 .event-note { margin-top: .8rem !important; font-size: .95rem; }
+/* Separatore: la fila di fiori disegnata da Irene e Nicola */
 .divider {
-  color: var(--accent);
-  text-align: center;
-  margin: 2.5rem 0;
-  letter-spacing: 1em;
+  display: block;
+  width: min(70%, 360px);
+  height: auto;
+  margin: 0 auto;
 }
+.divider--small { width: min(55%, 220px); margin: 2.5rem auto; }
 
 /* ---------- Bottoni ---------- */
 .btn {
@@ -321,7 +319,6 @@ h4 {
 .closing {
   text-align: center;
   padding: clamp(3.5rem, 10vw, 6rem) 1.25rem;
-  border-top: 1px solid var(--line);
 }
 .closing-title {
   font-size: clamp(1.6rem, 4vw, 2.2rem);
@@ -367,6 +364,5 @@ h4 {
     transition: transform .35s ease, visibility .35s;
   }
   .nav.open { transform: none; visibility: visible; }
-  .photo--offset { transform: translateY(1.5rem); }
   .photo--wide { aspect-ratio: 4 / 3; }
 }
